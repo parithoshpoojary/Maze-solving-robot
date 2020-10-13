@@ -64,6 +64,17 @@ And many more.
 * #### Ultrasonic Sensor
   HC-SR04 Ultrasonic (US) sensor is a 4 pin module, whose pin names are Vcc, Trigger, Echo and Ground respectively. This sensor is a very popular sensor used in many applications where 
   measuring distance or sensing objects are required. The module has two eyes like projects in the front which forms the Ultrasonic transmitter and Receiver.
+  
+#### Circuit-Diagram
+
+   ![circuit diagram](https://user-images.githubusercontent.com/43223792/95826624-36087200-0d50-11eb-9f0d-fb357b76d910.png)
+   
+#### Photos
+
+  ![top view - with sensor,wiring positioning](https://user-images.githubusercontent.com/43223792/95826807-7f58c180-0d50-11eb-96d9-71b4e46ee747.png)
+  
+  ![front view - with sensor positioning](https://user-images.githubusercontent.com/43223792/95826738-66501080-0d50-11eb-9ba9-a22a735d2c65.png)
+
 
 ##### Any given perfect maze (without any loops) can be easily solved and traversed back in path using this algorithm.
 
