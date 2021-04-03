@@ -13,7 +13,7 @@ Modern robotics technologies are focused on developing self-navigating autonomou
   *  Ultrasonic sensor mounted on the top of the robot, gives vision to the robot to avoid any obstacle.
 
     
-#### Photos
+### Photos
 
    <p align="center">
      <img width="460" height="300" src="https://user-images.githubusercontent.com/43223792/95826807-7f58c180-0d50-11eb-96d9-71b4e46ee747.png">
