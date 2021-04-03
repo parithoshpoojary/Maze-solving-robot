@@ -1,74 +1,18 @@
 # Maze-solving-robot
 
-In this project I have devised a robot which will move from any position in a maze to any target point.The robot acts according to a code written purely in Arduino, 
-which directs it to explore the maze containing random turns. The robot is autonomous and follows a derivative of wall following algorithm.
+This project is an implmentation of an autonomous robot which follows a derivative of Wall Follower (Left-Hand) algorithm using appropriate sensors. The robot acts according to the code written in Arduino, which directs it to explore the maze containing random turns. The robot is autonomous and follows a derivative of wall following algorithm.
 
-### Advantages of the project
+### Description
 
-Robots can be autonomous or semi-autonomous and range from humanoids such as Honda's Advanced Step in Innovative Mobility (ASIMO) and TOSY's TOSY Ping Pong Playing Robot (TOPIO) 
-to industrial robots, medical operating robots, patient assist robots, dog therapy robots, collectively programmed swarm robots, UAV drones such as General Atomics MQ-1 Predator, 
-and even microscopic nano-robots. By mimicking a lifelike appearance or automating movements, a robot may convey a sense of intelligence or thought of its own. Autonomous Things are 
-expected to proliferate in the coming decade, with home robotics and the autonomous car as some of the main drivers.  
+Modern robotics technologies are focused on developing self-navigating autonomous robots to automate our day-to-day processes. The aim for this project is to build a robot that is able find a path without any assistance or help in a given maze. As a type of autonomous robot, it has to decode the path on its own to solve the maze successfully. So it’s logic is quite different from the line following robot which follows a predetermined route. So, in this project I built a robot that traverses a maze and outputs the shortest path to the user after the robot has traversed the whole maze once using appropriate senors.
 
-###### This built robot is an autonomous robot.
+### Features
 
-### Possible Solution
+  *  Implementation of the Wall Follower algorithm.
+  *  Infrared sensor mounted on the bottom, enables the robot to traverse the maze with a smooth and refined movement.
+  *  Ultrasonic sensor mounted on the top of the robot, gives vision to the robot to avoid any obstacle.
 
-This problem can be solved using multiple algorithms such as: 
-  * Wall follower algorithm
-  * Pledge algorithm
-  * Dead-end Filling
-And many more.
-
-###### For my project, I have used the Left-Hand algorithm to traverse the maze in the first pass and make the robot automatically move in the shortest distance in the second pass.
-
-### OBJECTIVE
-
-* #### Model Objectives: 
-  The model should traverse the given maze, appropriately implementing the left-hand algorithm and learn the true shortest path when it reaches the end of the maze.
-  During the second run of the robot, it should travel only on the calculated shortest path form the Start to the End.
-
-* #### Real Life Practical Objectives:
-  In a real life scenario, this algorithm can be set up in catastrophy-hit places (landslides, flooding, etc.) to find a way out of the affected location. Since it is nearly impossible 
-  for living beings to find a way out themselves, these robots can easily overcome that problem as they can be modified to work on any terrain or weather conditions, yet using the same 
-  algorithm to solve the problem.
-
-### METHODOLOGY
-
-#### Components Required
-  * [Arduino UNO](#arduino-uno)
-  * [L298N Motor Driver](#l298n-motor-driver)
-  * [Infrared Sensor](#infrared-sensor)
-  * [Ultrasonic Senor](#ultrasonic-sensor)
-  * DC Geared Motors, 60rpm
-  * 12V 3A Battery
-  * Breadboard and jumper wires
-  * 4 Wheel Chassis
-
-#### Components Descriptions
-
-* #### Arduino UNO
-  The Arduino UNO is an open-source microcontroller board based on the Microchip ATmega328P microcontroller and developed by Arduino.cc. The board is equipped with 
-  sets of digital and analog input/output (I/O) pins that may be interfaced to various expansion boards (shields) and other circuits. The board has 14 Digital pins, 
-  6 Analog pins, and programmable with the Arduino IDE (Integrated Development Environment) via a type B USB cable. It can be powered by a USB cable or by an external 9 volt battery, 
-  though it accepts voltages between 7 and 20 volts.
-  
-* #### L298N Motor Driver
-  The L298N H-bridge module can be used with motors that have a voltage of between 5 and 35V DC. With the module used in this tutorial, there is also an onboard 5V regulator, 
-  so if your supply voltage is up to 12V you can also source 5V from the board.
-  
-* #### Infrared Sensor
-  An infrared sensor is an electronic instrument that is used to sense certain characteristics of its surroundings. It does this by either emitting or detecting infrared radiation. 
-  Infrared sensors are also capable of measuring the heat being emitted by an object and detecting motion.
-
-* #### Ultrasonic Sensor
-  HC-SR04 Ultrasonic (US) sensor is a 4 pin module, whose pin names are Vcc, Trigger, Echo and Ground respectively. This sensor is a very popular sensor used in many applications where 
-  measuring distance or sensing objects are required. The module has two eyes like projects in the front which forms the Ultrasonic transmitter and Receiver.
-  
-#### Circuit-Diagram
-
-   ![circuit diagram](https://user-images.githubusercontent.com/43223792/95826624-36087200-0d50-11eb-9f0d-fb357b76d910.png)
-   
+    
 #### Photos
 
   ![top view - with sensor,wiring positioning](https://user-images.githubusercontent.com/43223792/95826807-7f58c180-0d50-11eb-96d9-71b4e46ee747.png)
@@ -76,12 +20,17 @@ And many more.
   ![front view - with sensor positioning](https://user-images.githubusercontent.com/43223792/95826738-66501080-0d50-11eb-9ba9-a22a735d2c65.png)
 
 
-##### Any given perfect maze (without any loops) can be easily solved and traversed back in path using this algorithm.
+### Outcome
 
-###### note: Maze solving algorithm via left hand approach works for all but close looped mazes.
+The robot is capable of sucessfully traversing the entire maze and implementing the devised algorithm outputting a shortest path for the maze. With the exception of the battery, the device is self-contained, housing all electrical, mechanical, and software components within its frame.
 
-  
-### Future Scope
 
-  * The algorithm can be improved to include more ‘n’ junction-road variables and be able to solve a maze with known loops. 
-  * The robot can be modified according to the terrain that it has to be used on. 
+### Future Uses
+
+  * These can be used in fire figthing applications where there is more human loss, for example to find the shortest path   in the building that has been caught in fire.
+  * These can be used in military grade applications, for determining the most efficient path.
+  * Other applications include: Material Handling, Warehouse Managmanet, Pipe Inspection, Bomb Disposal etc.
+
+
+### Video Link
+The demonstration of the project is shown in [this link.](https://youtu.be/tLJ_TavAOBo)
